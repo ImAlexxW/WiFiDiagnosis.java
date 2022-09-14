@@ -1,0 +1,108 @@
+import java.util.Scanner;
+public class Assignment1 
+
+{
+	public static void main(String[] args) 
+	
+	{	
+		//Application header
+		System.out.println("If you have a problem with internet connectivity, this WiFi "
+				+ "diagnosis might work.");
+		
+		String programmer = "Alexander Wissdorf";
+		String input;
+		Scanner keyboard = new Scanner(System.in);
+		
+		//The following code goes along with part 1
+		System.out.println("\n\nReboot the computer and try to connect");
+		System.out.println("Did that fix the problem? (Yes or No): ");
+		
+		input = keyboard.nextLine().trim();
+		while(!input.equalsIgnoreCase("yes") && !input.equalsIgnoreCase("no"))
+		{
+			System.out.println("\nInvalid answer; try again");
+			System.out.println("\nDone");
+			System.out.println("Programmer: " + programmer);
+			return;
+		}
+		
+		if(input.equalsIgnoreCase("yes"))
+		{
+			System.out.println("\nDone");
+			System.out.println("Programmer: " + programmer);
+			return;
+		}
+		
+		//The following goes with Step 2
+		System.out.println("\nReboot the router and try to connect");
+		System.out.println("Did that fix the problem? (Yes or No): ");
+		
+		input = keyboard.nextLine().trim();
+		while(!input.equalsIgnoreCase("yes") && !input.equalsIgnoreCase("no"))
+		{
+			System.out.println("\nInvalid answer; try again");
+			System.out.println("\nDone");
+			System.out.println("Programmer: " + programmer);
+			return;
+		}
+		
+		if(input.equalsIgnoreCase("yes"))
+		{
+			System.out.println("\nDone");
+			System.out.println("Programmer: " + programmer);
+			return;
+		}
+		
+		//The following goes with Step 3
+		System.out.println("\nMake sure the cables connecting the router"
+				+ " are firmly plugged in and power is getting to the router");
+		System.out.println("Did that fix the problem? (Yes or No): ");
+		
+		input = keyboard.nextLine().trim();
+		while(!input.equalsIgnoreCase("yes") && !input.equalsIgnoreCase("no"))
+		{
+			System.out.println("\nInvalid answer; try again");
+			System.out.println("\nDone");
+			System.out.println("Programmer: " + programmer);
+			return;
+		}
+		
+		if(input.equalsIgnoreCase("yes"))
+		{
+			System.out.println("\nDone");
+			System.out.println("Programmer: " + programmer);
+			return;
+		}
+		
+		//The following goes along with Step 4
+		System.out.println("\nMove the computer closer to the router"
+				+ "and try to connect");
+		System.out.println("Did that fix the problem? (Yes or No): ");
+		
+		input = keyboard.nextLine().trim();
+		while(!input.equalsIgnoreCase("yes") && !input.equalsIgnoreCase("no"))
+		{
+			System.out.println("\nInvalid answer; try again");
+			System.out.println("\nDone");
+			System.out.println("Programmer: " + programmer);
+			return;
+		}
+		
+		if(input.equalsIgnoreCase("yes"))
+		{
+			System.out.println("\nDone");
+			System.out.println("Programmer: " + programmer);
+			return;
+		}
+		
+		//Final Step to the program
+		System.out.println("\nPlease contact your ISP");
+		System.out.println("\nDone");
+		System.out.println("Programmer: " + programmer);
+		return;
+		
+		
+	}
+	
+		
+}
